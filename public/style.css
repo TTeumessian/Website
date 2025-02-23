@@ -1,0 +1,165 @@
+* {
+  color: black;
+  font-family: monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.page {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  padding-top: 120px;
+}
+
+.page:nth-child(1) {
+  background-color: white;
+}
+
+.page:nth-child(2) {
+  background-color: #f0f0f0;
+  .page:nth-child(2) p,
+  .page:nth-child(3) p {
+    margin: 1.5rem 0;
+  }
+}
+
+.page:nth-child(3) {
+  background-color: #e0e0e0;
+}
+
+h1 {
+  font-size: 3rem;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  margin: 0;
+  padding: 10px 0;
+  background-color: transparent;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000;
+  margin: 0;
+  padding: 10px 0;
+  background-color: transparent;
+}
+
+.page:first-of-type p {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@media (max-width: 768px) {
+  .page:first-of-type p {
+    max-width: 90%;
+  }
+}
+
+pre {
+  position: relative;
+  overflow: hidden;
+  animation:
+    glitch 1s infinite,
+    matrix 2s infinite;
+  margin: 0;
+  width: 100%;
+  padding: 0 10px;
+}
+
+pre::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: attr(data-content);
+  color: lime;
+  background: transparent;
+  animation: rain 0.1s infinite;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+
+@media (max-width: 768px) {
+  pre {
+    width: 100%;
+    font-size: 12px;
+    overflow-x: auto;
+    pointer-events: none;
+    padding: 0 10px;
+  }
+
+  .container {
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+  }
+
+  pre::before {
+    color: inherit;
+    animation: matrix 2s infinite;
+  }
+}

@@ -30,7 +30,7 @@ body {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   position: relative;
-  padding-top: 120px;
+  padding: 60px 0;
 }
 
 .page:nth-child(1) {
@@ -39,10 +39,11 @@ body {
 
 .page:nth-child(2) {
   background-color: #f0f0f0;
-  .page:nth-child(2) p,
-  .page:nth-child(3) p {
-    margin: 1.5rem 0;
-  }
+}
+
+.page:nth-child(2) p,
+.page:nth-child(3) p {
+  margin: 1rem 0;
 }
 
 .page:nth-child(3) {
@@ -177,4 +178,9 @@ html, body {
   width: auto;
   display: block;
   margin: 0 auto;
+}
+
+h2 {
+  text-decoration: underline;
+  margin-bottom: 2rem;
 }

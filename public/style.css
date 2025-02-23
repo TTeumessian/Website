@@ -163,3 +163,18 @@ html, body {
     animation: matrix 2s infinite;
   }
 }
+
+.favicon-container {
+  position: relative;
+  margin: 2rem auto;
+  height: 8rem;
+  z-index: 1000;
+  display: block;
+}
+
+.favicon-container img {
+  height: 100%;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}

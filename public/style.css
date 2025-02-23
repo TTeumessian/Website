@@ -50,12 +50,10 @@ body {
 
 .page:nth-child(1) {
   background-color: white;
-  padding-top: 80px;
 }
 
 .favicon-container {
   position: relative;
-  margin: 2rem auto;
   height: 8rem;
   z-index: 1;
   display: block;

@@ -50,3 +50,25 @@ function scrollDownOnePage() {
     behavior: "smooth",
   });
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const header = document.querySelector('.header-content');
+  const pages = document.querySelectorAll('.page');
+  const container = document.querySelector('.container');
+
+  function updateHeaderBackground() {
+    const scrollPosition = container.scrollTop;
+    const windowHeight = window.innerHeight;
+
+    pages.forEach(page => {
+      const rect = page.getBoundingClientRect();
+      if (rect.top <= windowHeight/2 && rect.bottom >= windowHeight/2) {
+        const backgroundColor = window.getComputedStyle(page).backgroundColor;
+        header.style.backgroundColor = backgroundColor;
+      }
+    });
+  }
+
+  container.addEventListener('scroll', updateHeaderBackground);
+  updateHeaderBackground();
+});

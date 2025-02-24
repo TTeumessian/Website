@@ -38,11 +38,13 @@
         <h2 style="color: white;">Contact Us</h2>
         <div class="contact-form">
           <form action="send_email.php" method="POST">
+            <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
+            <input type="text" name="website" style="display:none"> <!-- Honeypot field -->
             <div class="form-row">
-              <input type="text" name="organization" placeholder="Organization" class="form-input name-input" required>
+              <input type="text" name="organization" placeholder="Organization" class="form-input name-input" required maxlength="100">
               <input type="email" name="email" placeholder="Email" class="form-input email-input" required>
             </div>
-            <textarea name="message" placeholder="Please describe your organization's AI security needs and objectives" class="form-input message-input" required></textarea>
+            <textarea name="message" placeholder="Please describe your organization's needs and objectives" class="form-input message-input" required maxlength="3000"></textarea>
             <button type="submit" class="send-button">Send</button>
           </form>
         </div>

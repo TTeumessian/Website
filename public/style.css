@@ -276,13 +276,7 @@ footer {
   background-position: center;
 }
 
-.us-ai-card {
-  background-image: url('images/flag.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.rl-redteam-card {
+.problems-card {
   background-image: url('images/hack.avif');
   background-size: cover;
   background-position: center;
@@ -296,12 +290,6 @@ footer {
 
 .ai-war {
   background-image: url('images/missile.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-.multi-agent {
-  background-image: url('images/knight.svg');
   background-size: cover;
   background-position: center;
 }
@@ -390,4 +378,14 @@ footer {
   background-color: #333;
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title-box {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 }

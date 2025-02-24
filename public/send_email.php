@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     if (empty($errors)) {
-        $to = "mitche11o41904@gmail.com"; // Replace with your email address
+        $to = "kralizec@kralizec.us"; // Replace with your email address
         $subject = "New Consultation Request from " . htmlspecialchars($organization);
         
         $email_content = "Organization: " . htmlspecialchars($organization) . "\n";

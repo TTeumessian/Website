@@ -253,3 +253,21 @@ footer {
   overflow-y: auto;
   padding-right: 10px; /* Adds space for the scrollbar */
 }
+
+.page:nth-child(3) h2 {
+  color: white;
+}
+
+.publications-section {
+  background-color: black !important;
+}
+
+.publications-section h2 {
+  color: white;
+}
+
+.ai-security-card {
+  background-image: url('images/shield.png');
+  background-size: cover;
+  background-position: center;
+}

@@ -26,23 +26,24 @@
         <p><strong>Risk Analysis &amp; Mitigation Strategies:</strong> Proactive approaches to manage and reduce emerging risks.</p>
         <p><strong>Security Architecture Design:</strong> Customized frameworks that secure your AI systems from the ground up.</p>
         <p><strong>Compliance &amp; Governance Frameworks:</strong> Ensuring your operations meet the highest regulatory standards.</p>
-        <p style="margin-bottom: 100px;"><strong>Incident Response Planning:</strong> Rapid, effective solutions to mitigate and recover from unforeseen events.</p>
+        <p style="margin-bottom: 10px;"><strong>Incident Response Planning:</strong> Rapid, effective solutions to mitigate and recover from unforeseen events.</p>
         <p>
-          We work closely with you and your team to develop tailored security solutions that align with your organizational goals and regulatory requirements.
+          We work closely with you and your team to develop tailored security solutions.
         </p>     
       </section>
       <section class="page publications-section">
         <h2 style="color: white;">Contact Us</h2>
-         <div class="contact-form">
-          <div class="form-row">
-            <input type="text" placeholder="Name" class="form-input name-input">
-            <input type="email" placeholder="Email" class="form-input email-input">
-          </div>
-          <textarea placeholder="Tell us about your needs" class="form-input message-input"></textarea>
-          <button type="submit" class="send-button">Send</button>
+        <div class="contact-form">
+          <form action="send_email.php" method="POST">
+            <div class="form-row">
+              <input type="text" name="organization" placeholder="Organization" class="form-input name-input" required>
+              <input type="email" name="email" placeholder="Email" class="form-input email-input" required>
+            </div>
+            <textarea name="message" placeholder="Please describe your organization's AI security needs and objectives" class="form-input message-input" required></textarea>
+            <button type="submit" class="send-button">Send</button>
+          </form>
         </div>
-      </section>
-    </div>
+       </div>
     <footer class="footer">
       <a href="index.html" class="back-link">← Back</a>
     </footer>

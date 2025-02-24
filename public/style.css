@@ -177,3 +177,29 @@ footer {
 .container {
   margin-bottom: 4rem;
 }
+
+.header-logo {
+  height: 1.2em;
+  width: auto;
+  vertical-align: baseline;
+  margin-right: 0.1em;
+  display: inline-block;
+  transform: translateY(0.27em);
+}
+
+.container, .page {
+  max-width: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+.pdf-container {
+  width: 80%;
+  max-width: 1600px;
+  margin: 0 auto;  /* This centers the container */
+}
+
+.pdf-content {
+  width: 100%;
+  max-width: 100%;
+}

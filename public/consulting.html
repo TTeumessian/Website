@@ -53,5 +53,19 @@
     <footer class="footer">
       <a href="index.html" class="back-link">← Back</a>
     </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          fetch('send_email.php?get_token')
+              .then(response => response.json())
+              .then(data => {
+                  const form = document.querySelector('form');
+                  const tokenInput = document.createElement('input');
+                  tokenInput.type = 'hidden';
+                  tokenInput.name = 'csrf_token';
+                  tokenInput.value = data.csrf_token;
+                  form.appendChild(tokenInput);
+              });
+      });
+      </script>  
   </body>
 </html>

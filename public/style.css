@@ -303,6 +303,13 @@ footer {
   background-position: center;
 }
 
+.deceptive {
+  background-image: url('images/mask.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 
 

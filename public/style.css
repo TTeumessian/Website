@@ -460,3 +460,29 @@ footer {
 .nav-links h3 a:hover {
   transform: translateY(-5px);
 }
+
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+}
+
+.social-links a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+  transform: translateY(-5px);
+}
+
+.social-links img {
+  height: 30px;
+  width: auto;
+}

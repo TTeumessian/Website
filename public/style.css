@@ -436,3 +436,27 @@ footer {
 .page {
   position: relative;
 }
+
+.selector {
+  position: absolute;
+  bottom: 20px;
+}
+
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin: 1.5rem 0 5px 0;
+}
+
+.nav-links h3 a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: inline-block;
+}
+
+.nav-links h3 a:hover {
+  transform: translateY(-5px);
+}

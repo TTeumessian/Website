@@ -297,6 +297,13 @@ footer {
   background-position: center;
 }
 
+.latent-space {
+  background-image: url('images/compass.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
 
 
 
@@ -411,4 +418,14 @@ footer {
   .split-container {
     flex-direction: column;
   }
+}
+
+
+.section-footer {
+  position: absolute;
+  bottom: 20px;
+}
+
+.page {
+  position: relative;
 }
